@@ -43,7 +43,6 @@ namespace TimeZebra.Invoices.Api
                 .RegisterModule<CommandModule>()
                 .RegisterModule<CommandHandlersModule>()
                 
-                // TODO: uncommnent
                 .RegisterModule<EntityFrameworkQueryHandlersModule>()
                 .RegisterModule<EntityFrameworkEventStoreModule>()
                 .RegisterModule<EntityFrameworkReadModelModule>();

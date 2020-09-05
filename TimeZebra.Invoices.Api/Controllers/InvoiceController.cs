@@ -21,9 +21,9 @@ namespace TimeZebra.Invoices.Api.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> AddInvoice(string invoiceId, [FromBody] AddInvoiceViewModel addInvoiceViewModel)
+        public async Task<IActionResult> AddInvoice([FromBody] AddInvoiceViewModel addInvoiceViewModel)
         {
-            var command = new AddInvoiceCommand(InvoiceId.With(Guid.Parse(invoiceId)), addInvoiceViewModel.Title);
+            var command = new AddInvoiceCommand(InvoiceId.New, addInvoiceViewModel.Title);
             await _commandBus.PublishAsync(command, CancellationToken.None);
             return Ok();
         }

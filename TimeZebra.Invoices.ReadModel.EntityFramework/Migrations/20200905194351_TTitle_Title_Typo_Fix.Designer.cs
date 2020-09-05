@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TimeZebra.Invoices.ReadModel.EntityFramework.DBContext;
 
 namespace TimeZebra.Invoices.ReadModel.EntityFramework.Migrations
 {
     [DbContext(typeof(RestInvoiceReadModelContext))]
-    partial class RestInvoiceReadModelContextModelSnapshot : ModelSnapshot
+    [Migration("20200905194351_TTitle_Title_Typo_Fix")]
+    partial class TTitle_Title_Typo_Fix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

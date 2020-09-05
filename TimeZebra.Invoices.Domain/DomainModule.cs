@@ -1,6 +1,7 @@
 using EventFlow;
 using EventFlow.Configuration;
 using EventFlow.Extensions;
+using EventFlow.AspNetCore.Extensions;
 
 namespace TimeZebra.Invoices.Domain
 {
@@ -8,7 +9,9 @@ namespace TimeZebra.Invoices.Domain
     {
         public void Register(IEventFlowOptions eventFlowOptions)
         {
-            eventFlowOptions.AddDefaults(typeof(DomainModule).Assembly);
+            eventFlowOptions
+                .AddDefaults(typeof(DomainModule).Assembly)
+                .AddAspNetCore();
         }
     }
 }
