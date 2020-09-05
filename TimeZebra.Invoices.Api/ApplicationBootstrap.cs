@@ -9,6 +9,8 @@ using TimeZebra.Invoices.Api.Swagger;
 using TimeZebra.Invoices.CommandHandlers;
 using TimeZebra.Invoices.Commands;
 using TimeZebra.Invoices.Domain;
+using TimeZebra.Invoices.QueryHandlers.EntityFramework;
+using TimeZebra.Invoices.ReadModel.EntityFramework;
 
 namespace TimeZebra.Invoices.Api
 {
@@ -36,9 +38,9 @@ namespace TimeZebra.Invoices.Api
                 .RegisterModule<CommandHandlersModule>()
                 
                 // TODO: uncommnent
-                // .RegisterModule<EntityFrameworkQueryHandlersModule>()
-                // .RegisterModule<EntityFrameworkEventStoreModule>()
-                // .RegisterModule<EntityFrameworkReadModelModule>();
+                .RegisterModule<EntityFrameworkQueryHandlersModule>()
+                .RegisterModule<EntityFrameworkEventStoreModule>()
+                .RegisterModule<EntityFrameworkReadModelModule>();
                 
                 // MongoDB event store and read model
                 // .RegisterModule<MongoDBEventStoreModule>()

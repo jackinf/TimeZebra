@@ -4,4 +4,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TimeZebra.Invoices.ReadModel.EntityFramework\TimeZebra.Invoices.ReadModel.EntityFramework.csproj" />
+    </ItemGroup>
+
 </Project>
