@@ -25,7 +25,7 @@ namespace TimeZebra.Invoices.Api
             
             // We need this in order for dotnet ef migrations to work
             services.AddDbContext<RestInvoiceReadModelContext>(x =>
-                x.UseSqlServer("ReadModelConnectionString"));
+                x.UseSqlServer(configuration.GetConnectionString("ReadModelConnectionString")));
         }
 
         public static void RegisterCommonServices(IServiceCollection services)
