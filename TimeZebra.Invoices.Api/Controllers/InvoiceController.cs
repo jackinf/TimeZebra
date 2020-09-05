@@ -20,6 +20,7 @@ namespace TimeZebra.Invoices.Api.Controllers
             _commandBus = commandBus;
         }
         
+        [HttpPost]
         public async Task<IActionResult> AddInvoice(string invoiceId, [FromBody] AddInvoiceViewModel addInvoiceViewModel)
         {
             var command = new AddInvoiceCommand(InvoiceId.With(Guid.Parse(invoiceId)), addInvoiceViewModel.Title);

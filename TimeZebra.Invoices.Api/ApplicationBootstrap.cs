@@ -1,6 +1,7 @@
 using System;
 using EventFlow;
 using EventFlow.DependencyInjection.Extensions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -11,6 +12,7 @@ using TimeZebra.Invoices.Commands;
 using TimeZebra.Invoices.Domain;
 using TimeZebra.Invoices.QueryHandlers.EntityFramework;
 using TimeZebra.Invoices.ReadModel.EntityFramework;
+using TimeZebra.Invoices.ReadModel.EntityFramework.DBContext;
 
 namespace TimeZebra.Invoices.Api
 {
@@ -20,6 +22,10 @@ namespace TimeZebra.Invoices.Api
         {
             RegisterCommonServices(services);
             RegisterEventFlow(services);
+            
+            // We need this in order for dotnet ef migrations to work
+            services.AddDbContext<RestInvoiceReadModelContext>(x =>
+                x.UseSqlServer("ReadModelConnectionString"));
         }
 
         public static void RegisterCommonServices(IServiceCollection services)

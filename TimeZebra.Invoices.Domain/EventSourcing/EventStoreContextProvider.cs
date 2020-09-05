@@ -11,8 +11,9 @@ namespace TimeZebra.Invoices.Domain.EventSourcing
 
         public EventStoreContextProvider(IConfiguration configuration)
         {
+            var connectionString = configuration["ConnectionStrings:EventStoreConnectionString"];
             _options = new DbContextOptionsBuilder<EventStoreContext>()
-                .UseSqlServer(configuration["EventStoreConnectionString"])
+                .UseSqlServer(connectionString)
                 .Options;
         }
         

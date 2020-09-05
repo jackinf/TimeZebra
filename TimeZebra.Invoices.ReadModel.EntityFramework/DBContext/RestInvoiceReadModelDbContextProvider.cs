@@ -10,7 +10,7 @@ namespace TimeZebra.Invoices.ReadModel.EntityFramework.DBContext
 
         public RestInvoiceReadModelDbContextProvider(IConfiguration configuration)
         {
-            var connectionString = configuration["ReadModelConnectionString"];
+            var connectionString = configuration["ConnectionStrings:ReadModelConnectionString"];
             _options = new DbContextOptionsBuilder<RestInvoiceReadModelContext>()
                 .UseSqlServer(connectionString)
                 .Options;
