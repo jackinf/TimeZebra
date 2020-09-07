@@ -23,6 +23,11 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerCompose", "DockerCompose", "{DF982B7D-6F69-4DFB-A379-9B85D28E4644}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose\time-zebra\docker-compose.yaml = docker-compose\time-zebra\docker-compose.yaml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
