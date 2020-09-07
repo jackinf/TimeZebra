@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TimeZebra.Invoicing.Commands\TimeZebra.Invoicing.Commands.csproj" />
+      <ProjectReference Include="..\TimeZebra.Invoicing.Domain\TimeZebra.Invoicing.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

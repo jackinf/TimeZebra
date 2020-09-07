@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TimeZebra.Invoicing.Queries.EntityFramework\TimeZebra.Invoicing.Queries.EntityFramework.csproj" />
+      <ProjectReference Include="..\TimeZebra.Invoicing.ReadModel.EntityFramework\TimeZebra.Invoicing.ReadModel.EntityFramework.csproj" />
+    </ItemGroup>
+
+</Project>

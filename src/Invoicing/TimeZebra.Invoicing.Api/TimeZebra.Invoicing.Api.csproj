@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>CS1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\EntityFramework\TimeZebra.Invoicing.Queries.EntityFramework\TimeZebra.Invoicing.Queries.EntityFramework.csproj" />
+        <ProjectReference Include="..\EntityFramework\TimeZebra.Invoicing.QueryHandlers.EntityFramework\TimeZebra.Invoicing.QueryHandlers.EntityFramework.csproj" />
+        <ProjectReference Include="..\EntityFramework\TimeZebra.Invoicing.ReadModel.EntityFramework\TimeZebra.Invoicing.ReadModel.EntityFramework.csproj" />
+        <ProjectReference Include="..\TimeZebra.Invoicing.CommandHandlers\TimeZebra.Invoicing.CommandHandlers.csproj" />
+        <ProjectReference Include="..\TimeZebra.Invoicing.Commands\TimeZebra.Invoicing.Commands.csproj" />
+        <ProjectReference Include="..\TimeZebra.Invoicing.Domain\TimeZebra.Invoicing.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.5.1" />
+        <PackageReference Include="EventFlow.DependencyInjection" Version="0.79.4216" />
+        <PackageReference Include="EventFlow.EntityFramework" Version="0.79.4216" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7" />
+    </ItemGroup>
+
+</Project>
