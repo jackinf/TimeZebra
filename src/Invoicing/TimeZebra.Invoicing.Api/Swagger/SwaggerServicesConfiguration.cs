@@ -8,7 +8,7 @@ namespace TimeZebra.Invoicing.Api.Swagger
 {
     public static class SwaggerServicesConfiguration
     {
-        public static void Confirure(IServiceCollection services)
+        public static void Configure(IServiceCollection services)
         {
             services.AddSwaggerGen(
                 options =>

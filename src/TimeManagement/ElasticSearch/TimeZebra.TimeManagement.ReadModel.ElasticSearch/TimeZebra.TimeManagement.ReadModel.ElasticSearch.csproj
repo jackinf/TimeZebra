@@ -10,13 +10,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Queries" />
-        <Folder Include="QueryHandlers" />
-        <Folder Include="TimeManagement" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\..\TimeZebra.Shared\TimeZebra.Shared.csproj" />
+      <ProjectReference Include="..\..\TimeZebra.TimeManagement.Domain\TimeZebra.TimeManagement.Domain.csproj" />
     </ItemGroup>
 
 </Project>

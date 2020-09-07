@@ -6,7 +6,7 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace TimeZebra.Invoicing.Api.HealthCheck
+namespace TimeZebra.TimeManagement.Api.HealthCheck
 {
     public class HealthCheckerResponseProvider
     {
@@ -23,7 +23,7 @@ namespace TimeZebra.Invoicing.Api.HealthCheck
             var dt = DateTime.Now;
             var settings = new
             {
-                Message = "Hello, Welcome to Invoicing Api",
+                Message = "Hello, Welcome to TimeManagement Api",
                 EnvironmentName = _hostingEnvironment.EnvironmentName,
                 LocalDate = dt,
                 UtcDate = dt.ToUniversalTime(),

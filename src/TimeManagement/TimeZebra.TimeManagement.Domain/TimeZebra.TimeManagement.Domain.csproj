@@ -10,7 +10,7 @@
     </ItemGroup>
     
     <ItemGroup>
-      <Folder Include="EventSourcing" />
+      <ProjectReference Include="..\..\TimeZebra.Shared\TimeZebra.Shared.csproj" />
     </ItemGroup>
     
 </Project>

@@ -4,5 +4,17 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ElasticSearch\TimeZebra.TimeManagement.ReadModel.ElasticSearch\TimeZebra.TimeManagement.ReadModel.ElasticSearch.csproj" />
+      <ProjectReference Include="..\TimeZebra.TimeManagement.CommandHandlers\TimeZebra.TimeManagement.CommandHandlers.csproj" />
+      <ProjectReference Include="..\TimeZebra.TimeManagement.Commands\TimeZebra.TimeManagement.Commands.csproj" />
+      <ProjectReference Include="..\TimeZebra.TimeManagement.Domain\TimeZebra.TimeManagement.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.5.1" />
+    </ItemGroup>
+
 
 </Project>
