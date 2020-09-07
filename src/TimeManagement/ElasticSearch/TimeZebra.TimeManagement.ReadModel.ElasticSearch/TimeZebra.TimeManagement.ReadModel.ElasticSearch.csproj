@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EventFlow" Version="0.79.4216" />
+        <PackageReference Include="EventFlow.Elasticsearch" Version="0.79.4216" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Queries" />
+        <Folder Include="QueryHandlers" />
+        <Folder Include="TimeManagement" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\TimeZebra.Shared\TimeZebra.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

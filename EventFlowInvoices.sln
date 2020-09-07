@@ -23,10 +23,28 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerCompose", "DockerCompose", "{DF982B7D-6F69-4DFB-A379-9B85D28E4644}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{DF982B7D-6F69-4DFB-A379-9B85D28E4644}"
 ProjectSection(SolutionItems) = preProject
 	docker-compose\time-zebra\docker-compose.yaml = docker-compose\time-zebra\docker-compose.yaml
 EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeManagement", "TimeManagement", "{F3C48544-A3E4-4275-BEBF-62CA074A2AC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ElasticSearch", "ElasticSearch", "{30053218-E607-4D65-8B73-7058F3830979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.TimeManagement.Api", "src\TimeManagement\TimeZebra.TimeManagement.Api\TimeZebra.TimeManagement.Api.csproj", "{9FFEC36F-93A2-4D3B-965B-0400D0465830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.TimeManagement.CommandHandlers", "src\TimeManagement\TimeZebra.TimeManagement.CommandHandlers\TimeZebra.TimeManagement.CommandHandlers.csproj", "{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.TimeManagement.Commands", "src\TimeManagement\TimeZebra.TimeManagement.Commands\TimeZebra.TimeManagement.Commands.csproj", "{9B0FBDE1-A35C-430F-A0B9-34469977F696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.TimeManagement.Domain", "src\TimeManagement\TimeZebra.TimeManagement.Domain\TimeZebra.TimeManagement.Domain.csproj", "{64BA32F1-E9D1-49F9-8CEF-C0757981B13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.TimeManagement.ReadModel.ElasticSearch", "src\TimeManagement\ElasticSearch\TimeZebra.TimeManagement.ReadModel.ElasticSearch\TimeZebra.TimeManagement.ReadModel.ElasticSearch.csproj", "{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZebra.Shared", "src\TimeZebra.Shared\TimeZebra.Shared.csproj", "{CE09A160-2D9D-4C66-B207-97183C405959}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E96081C9-D04D-4867-81E6-B3F8BB6F8B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +80,30 @@ Global
 		{9ED4D598-607F-4014-83E0-F958AD000273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED4D598-607F-4014-83E0-F958AD000273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED4D598-607F-4014-83E0-F958AD000273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFEC36F-93A2-4D3B-965B-0400D0465830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFEC36F-93A2-4D3B-965B-0400D0465830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFEC36F-93A2-4D3B-965B-0400D0465830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFEC36F-93A2-4D3B-965B-0400D0465830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0FBDE1-A35C-430F-A0B9-34469977F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0FBDE1-A35C-430F-A0B9-34469977F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0FBDE1-A35C-430F-A0B9-34469977F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0FBDE1-A35C-430F-A0B9-34469977F696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BA32F1-E9D1-49F9-8CEF-C0757981B13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BA32F1-E9D1-49F9-8CEF-C0757981B13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BA32F1-E9D1-49F9-8CEF-C0757981B13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BA32F1-E9D1-49F9-8CEF-C0757981B13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE09A160-2D9D-4C66-B207-97183C405959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE09A160-2D9D-4C66-B207-97183C405959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE09A160-2D9D-4C66-B207-97183C405959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE09A160-2D9D-4C66-B207-97183C405959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9B97BF9D-5AB6-4F35-A4D1-02E4C89DC899} = {E9B03753-2B31-403A-8324-416AA8B81C13}
@@ -72,5 +114,13 @@ Global
 		{376C67F4-9219-4FC8-8906-D29B0D73FDB9} = {457E6342-A46B-45C7-9072-3A41AFFB8B7D}
 		{CA87CEF0-298C-4F07-8F7B-0CC40F5E9438} = {457E6342-A46B-45C7-9072-3A41AFFB8B7D}
 		{9ED4D598-607F-4014-83E0-F958AD000273} = {457E6342-A46B-45C7-9072-3A41AFFB8B7D}
+		{30053218-E607-4D65-8B73-7058F3830979} = {F3C48544-A3E4-4275-BEBF-62CA074A2AC4}
+		{9FFEC36F-93A2-4D3B-965B-0400D0465830} = {F3C48544-A3E4-4275-BEBF-62CA074A2AC4}
+		{8B9C106A-1A4A-4B63-A38E-09B101FC2CEE} = {F3C48544-A3E4-4275-BEBF-62CA074A2AC4}
+		{9B0FBDE1-A35C-430F-A0B9-34469977F696} = {F3C48544-A3E4-4275-BEBF-62CA074A2AC4}
+		{64BA32F1-E9D1-49F9-8CEF-C0757981B13C} = {F3C48544-A3E4-4275-BEBF-62CA074A2AC4}
+		{088DC4A3-04EB-4473-BDCE-E2F6E1AA3406} = {30053218-E607-4D65-8B73-7058F3830979}
+		{E9B03753-2B31-403A-8324-416AA8B81C13} = {E96081C9-D04D-4867-81E6-B3F8BB6F8B8C}
+		{F3C48544-A3E4-4275-BEBF-62CA074A2AC4} = {E96081C9-D04D-4867-81E6-B3F8BB6F8B8C}
 	EndGlobalSection
 EndGlobal
